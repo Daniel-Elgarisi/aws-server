@@ -1,0 +1,19 @@
+{
+  "name": "back-daniel",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "pg": "^8.7.1"
+  },
+  "devDependencies": {
+    "jest": "^27.4.0"
+  },
+  "keywords": [],
+  "description": ""
+}
