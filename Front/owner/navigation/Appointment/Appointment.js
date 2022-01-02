@@ -37,6 +37,8 @@ async function requestAppointment() {
    let pname = document.getElementById("PetName").value;
    let apptype = document.getElementById("AppType").value;
    let date = new Date(document.getElementById("date").value);
+   let ip = sessionStorage.getItem("ip")
+
    // let time = new Date(document.getElementById("time").value).toISOString();
    let time = document.getElementById("time").value;
    // console.log(+time[0]*10 + +time[1],time[3]*10);
@@ -45,7 +47,7 @@ async function requestAppointment() {
 
    //fetch
    //call for POST to the url:
-   let response = await fetch('http://localhost:5000/appointments/make', {
+   let response = await fetch(`http://${ip}:5000/appointments/make`, {
      //post
      method: 'POST',
      headers: {
