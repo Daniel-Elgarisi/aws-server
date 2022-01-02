@@ -1,0 +1,173 @@
+body  
+{  
+    margin: 0;  
+    padding: 0;   
+    font-family: 'Segoe UI Semibold';
+    text-align: center;
+    background-image: url("PetRegistrationBackground.png"); 
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+}  
+.register{  
+        width: 350px;  
+        overflow:hidden;  
+        margin: auto;  
+        margin: 20 0 0 500px;  
+        padding: 20px;  
+        background-image: url("pic.jpg"); 
+        opacity: 1;
+        border-radius: 50px ;  
+        position: absolute;
+        top: 5%;
+        left: 42%;   
+        border: 3px solid rgba(73, 52, 38, 0.411);
+        box-shadow: 0 0 40px rgba(8,7,16,0.6);     
+}  
+
+
+h2{  
+    text-align: center;  
+    color: #000000;  
+    padding: 10px;  
+}  
+label{  
+    color: #000000;  
+    font-size: 17px;
+    font-family: 'Century Gothic', cursive;
+    color: #000000;  
+}
+
+#Breed{  
+    width: 300px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 8px;  
+    padding: 3px;
+    margin: 5px; 
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 5px rgba(8,7,16,0.6);
+    background-color: rgba(255, 255, 255, 0.925);
+    font-family: 'Century Gothic', cursive;
+    color: #000000;
+  }
+
+
+#PetName{  
+  width: 300px;  
+  height: 30px;  
+  border: none;  
+  border-radius: 8px;  
+  padding: 3px;
+  margin: 5px; 
+  border: 2px solid rgba(255,255,255,0.1);
+  box-shadow: 0 0 5px rgba(8,7,16,0.6);
+  background-color: rgba(255, 255, 255, 0.925);
+  font-family: 'Century Gothic', cursive;
+  color: #000000;
+}
+ 
+
+#Phone{  
+    width: 300px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 8px;  
+    padding: 3px;  
+    margin: 5px;
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 5px rgba(8,7,16,0.6);
+    background-color: rgba(255, 255, 255, 0.925);
+    font-family: 'Century Gothic', cursive;
+    color: #000000;
+      
+}
+
+#ChipNumber{  
+    width: 300px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 8px;  
+    padding: 3px;  
+    margin: 5px;
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 5px rgba(8,7,16,0.6);
+    background-color: rgba(255, 255, 255, 0.925);
+    font-family: 'Century Gothic', cursive;
+    color: #000000;
+      
+}
+
+#PetBirthday{  
+    width: 300px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 8px;  
+    padding: 3px;  
+    margin: 5px;
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 5px rgba(8,7,16,0.6);
+    background-color: rgba(255, 255, 255, 0.925);
+    font-family: 'Century Gothic', cursive;
+    color: #000000;
+      
+}
+
+#Gender{  
+    width: 300px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 8px;  
+    padding: 3px;  
+    margin: 5px;
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 5px rgba(8,7,16,0.6);
+    background-color: rgba(255, 255, 255, 0.925);
+    font-family: 'Century Gothic', cursive;
+    color: #000000;
+      
+}
+
+#Type{  
+    width: 300px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 8px;  
+    padding: 3px;  
+    margin: 5px;
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 5px rgba(8,7,16,0.6);
+    background-color: rgba(255, 255, 255, 0.925);
+    font-family: 'Century Gothic', cursive;
+    color: #000000;
+      
+}
+
+button{  
+    margin-top: 5px;
+    width: 30%;
+    background-color: #ffffff;
+    color: #080710;
+    padding: 4px 0;
+    font-size: 14px;
+    font-weight: 70;
+    border-radius: 30px;
+    cursor: pointer;    
+    font-family: 'Century Gothic';   
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 5px rgba(8,7,16,0.6);
+    border: 2px solid rgba(255,255,255,0.1);
+    font-family: 'Century Gothic', cursive;
+    color: #000000;
+    
+     
+}
+
+span{  
+    color: white;  
+    font-size: 17px;  
+}  
+a{  
+    float: left;  
+    background-color: grey;  
+}  

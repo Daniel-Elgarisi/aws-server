@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" href="Vaccines.css" type="text/css">
+    <style>
+        table {
+            background-color: #0505056e;
+            margin-top: 400px
+        }
+
+        th {
+            background-color: #57443b8f;
+            color: rgb(255, 255, 255);
+            padding: 10px;
+            text-align: left;
+            font-family: 'Segoe UI Semibold', cursive;
+            border: 2px solid rgba(49, 36, 17, 0.726);
+            text-align: center;
+
+
+        }
+
+        td {
+            border: 0px solid black;
+            color: rgb(0, 0, 0);
+            background-color: rgb(255, 255, 255);
+            padding: 10px;
+            text-align: left;
+            font-family: 'Segoe UI Semibold', cursive;
+            border: 2px solid rgba(49, 36, 17, 0.726);
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="body-content">
+        <div class="vaccines">
+            <h1>צפייה בפנקס חיסונים</h1>
+            <form class="form" method="post" enctype="multipart/form-data" autocomplete="off">
+                <div class="alert alert-error"></div>
+                <input type="text" id="Pname" name="Pet name" placeholder="Pet name" required /><br>
+            </form>
+            <button onclick="watchVaccines()">צפייה</button><br>
+
+        </div>
+        <table id="tbe" style="width: 30%;">
+        </table>
+    </div>
+    <script src="Vaccines.js"></script>
+</body>
+
+</html>

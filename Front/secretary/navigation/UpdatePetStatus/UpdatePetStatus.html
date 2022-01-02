@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<head>
+  <link rel="stylesheet" href="UpdatePetStatus.css" type="text/css">
+</head>
+
+<body>
+  <div class="body-content">
+    <div class="updateStatus">
+      <h2>עדכון סטטוס בע"ח</h2>
+      <form class="form" method="post" enctype="multipart/form-data" autocomplete="off">
+        <div class="alert alert-error"></div>
+        <input onfocusout="findOwner()" type="tel" id="Phone" name="Phone" placeholder="Pet owner phone number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"required />
+        <input type="text" id="Pname" name="Pet name" placeholder="Pet name"required /><br>
+      </form>
+      <button onclick="updateStatus()">update</button><br>
+    </div>
+  </div>
+  <script src="UpdatePetStatus.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="Vaccination.css">
+</head>
+
+<body>
+    <div class="vaccein">
+        <form method="post">
+            <h1>מתן חיסון</h1>
+            <input onfocusout="findOwner()" type="tel" id="Phone" name="Phone" placeholder="Pet owner phone number"pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required />
+            <input disabled onfocusout="findPetIdByName()" type="text" name="Pname" id="Pname" placeholder="Pet name"><br>
+            <label for="role">Choose a vaccein:</label>
+            <select id="Vacceins" name="vacceins">
+                <option>בחר חיסון</option>
+                <option value="משושה I">משושה I</option>
+                <option value="משושה II">משושה II</option>
+                <option value="משושה III">משושה III</option>
+                <option value="כלבת">כלבת</option>
+                <option value="תולעים">תולעים</option>
+            </select>
+        </form>
+        <button onclick="updateVaccein()">הכנס חיסון</button><br>
+    </div>
+    <script src="Vaccination.js"></script>
+</body>
+
+</html>

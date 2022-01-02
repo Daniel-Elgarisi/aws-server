@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" type="text/css" href="EditProfile.css">
+</head>
+
+<body>
+    <div class="update">
+    <form method="post">
+            <h2>עריכת פרטים אישיים</h2>
+            <input type="text" name="name" id="Name" placeholder="Name" href="#" data-toggle="tooltip" title="הזן את שמך הפרטי" required><br>
+            <input type="text" name="Lastname" id="Lname" placeholder="Last name" placeholder="Name" href="#" data-toggle="tooltip" title="הזן את שם משפחתך" required><br>
+            <input type="email" id="Email" name="Email" placeholder="Email address" href="#" data-toggle="tooltip" title="הזן את כתובת דואר האלקטרוני שלך"required><br>
+            <input type="tel" id="Phone" name="Phone" placeholder="Phone number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" href="#" data-toggle="tooltip" title="הזן את מספר הטלפון שלך" required><br>
+        </form>
+        <button onclick="update()" href="#" data-toggle="tooltip" title="לחץ כאן בסיום עדכון פרטייך האישיים על מנת לעדכנם במערכת"
+        >update</button><br>
+    </div>
+    <script src="EditProfile.js"></script>
+</body>
+
+</html>
