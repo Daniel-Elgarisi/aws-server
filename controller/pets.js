@@ -43,27 +43,6 @@ router.get('/pets', (req, res) => {
 })
 
 
-router.post('/updateVaccein', (req, response) => {
-    client.query(`INSERT into vaccantions (vaccine_type,pet_id,date) 
-                VALUES ($1,$2,CURRENT_DATE)`,
-        [req.body.vaccein, req.body.petId],
-        (err, res) => {
-            if (err) {
-                console.log(err);
-                response.status(400).contentType('application/json').json({
-                    "message": "update failed!"
-                })
-            }
-            else {
-                response.status(200).contentType('application/json').json({
-                    "message": "update ok!"
-                })
-            }
-
-        }
-    )
-})
-
 router.post('/findPetIdByName', (req, response) => {
     client.query(`SELECT id FROM pets WHERE name=$1 AND owner_id=$2`, [req.body.pname, req.body.ownerId],
         (err, res) => {
