@@ -45,21 +45,32 @@ async function login(req, response) {
 }
 
 
+
 async function updateUser(req, response) {
-    client.query('UPDATE users SET  first_name=$1, last_name=$2, email=$3, phone_number=$4 WHERE user_name = $5',
-        [req.body.name, req.body.lname, req.body.email, req.body.phone, req.body.currentUser],
+
+    let user = await client.query("select * from users");
+    for (let i = 0; i < user.rowCount; i++) {
+        if (user.rows[i].email == req.body.email) {
+            if (user.rows[i].user_name != req.body.currentUser) {
+                return response.status(400).json({ message: "email exist" });
+            }
+        }
+        if (user.rows[i].phone_number == req.body.phone) {
+            if (user.rows[i].user_name != req.body.currentUser)
+                return response.status(400).json({ message: "phone number exist" });
+        }
+    }
+
+    client.query('UPDATE users SET  first_name=$1, last_name=$2, email=$3, phone_number=$4 WHERE user_name = $5', [req.body.name, req.body.lname, req.body.email, req.body.phone, req.body.currentUser],
         (err, res) => {
             if (err) {
                 response.status(400).contentType('application/json').json({
                     "message": "edit failed!"
                 })
-            }
-            else {
+            } else
                 response.status(200).contentType('application/json').json({
                     "message": "edit ok!"
                 })
-            }
-
         }
     )
 }
