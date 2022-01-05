@@ -52,6 +52,10 @@ async function updateUser(req, response) {
     for (let i = 0; i < user.rowCount; i++) {
         if (user.rows[i].email == req.body.email) {
             if (user.rows[i].user_name != req.body.currentUser) {
+                console.log(user.rows[i].email);
+                console.log(req.body.email);
+                console.log(user.rows[i].user_name);
+                console.log(req.body.currentUser);
                 return response.status(400).json({ message: "email exist" });
             }
         }
@@ -69,6 +73,7 @@ async function updateUser(req, response) {
     client.query('UPDATE users SET  first_name=$1, last_name=$2, email=$3, phone_number=$4 WHERE user_name = $5', [req.body.name, req.body.lname, req.body.email, req.body.phone, req.body.currentUser],
         (err, res) => {
             if (err) {
+                console.log(err);
                 response.status(400).contentType('application/json').json({
                     "message": "edit failed!"
                 })
