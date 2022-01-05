@@ -56,8 +56,13 @@ async function updateUser(req, response) {
             }
         }
         if (user.rows[i].phone_number == req.body.phone) {
-            if (user.rows[i].user_name != req.body.currentUser)
+            if (user.rows[i].user_name != req.body.currentUser){
+                console.log("taking user name from db", user.rows[i].phone_number);
+                console.log("send from front",req.body.phone);
+                console.log("taking user name from db", user.rows[i].user_name);
+                console.log("send from front",req.body.currentUser);
                 return response.status(400).json({ message: "phone number exist" });
+            }
         }
     }
 
